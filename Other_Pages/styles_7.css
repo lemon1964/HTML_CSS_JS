@@ -1,0 +1,351 @@
+span#qq, span#ww{
+    border:1px solid red;
+    padding:10px;
+    margin:50px;
+    width:100px;
+    height:50px;
+  }
+
+  span#qq {
+    animation: blink 2s ease infinite;
+    text-align: center;
+    color: blueviolet;
+    background-color: yellow;
+  }
+
+  span#ww {
+    animation: changeColor 3s ease infinite;
+    color: yellow;
+    text-align: center;
+  }
+
+  /* Анимация сдвига задать период 5 секунд */
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animated-element {
+    animation: slide-in 1s ease-in-out;
+    text-align: center;
+    color: green;
+  }
+  
+  .animated-element:hover {
+    animation: none; /* Остановить анимацию при наведении мыши */
+  }
+
+
+  /* Анимация вращения */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .image {
+    animation: rotate 10s linear infinite;
+    text-align: center;
+  }
+
+  /* Анимация изменения цвета */
+  @keyframes changeColor {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  
+  .svg {
+    animation: changeColor 3s ease infinite;
+  }
+
+  /* Анимация движения */
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+  
+  .move-element {
+    animation: move 2s ease infinite;
+    text-align: center;
+    color: rgb(226, 43, 104);
+  }
+
+  /* Анимация мигания */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .text {
+    animation: blink 2s ease infinite;
+    text-align: center;
+    color: rgb(44, 114, 68);
+  }
+
+  /* Анимация пульсации */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(-1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulse-element {
+    animation: pulse 2s ease infinite;
+    color: blue;
+    text-align: center;
+  }
+
+  .pulse-move-element {
+    animation: pulse 2s ease infinite;
+    color: rgb(241, 108, 20);
+    /* text-align: center; */
+  }
+
+/* Задание 5.8.9 */
+  .product-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    transition: all 0.3s ease;
+    width: 150px;
+    border: 1px solid #ccc;
+    text-align: center
+}
+.product-card img {
+    max-width: 100%;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    color: #ff5722;
+}
+
+.product-card .details-button {
+    display: block;
+    background-color: #2196F3;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+.product-card:hover h3 {
+    color: #fff;
+}
+
+.product-card:hover .price {
+    color: #fff;
+}
+
+.product-card:hover .details-button {
+    background-color: #fff;
+    color: #2196F3;
+}
+
+
+/* Задание 5.8.10 */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0
+} */
+
+.profile-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center
+}
+
+company-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.company-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-container h1 {
+    font-size: 24px;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+
+h3#qe {
+  animation: blink 2s ease infinite;
+  text-align: center;
+}
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.banner {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  display: inline;
+  animation: colorChange 4s linear infinite, blink 2s linear infinite;
+}
+
+@keyframes colorChange {
+  0%, 100% {
+      color: red;
+  }
+  25% {
+      color: green;
+  }
+  50% {
+      color: blue;
+  }
+  75% {
+      color: orange;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.2;
+  }
+}
+
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  /* height: 100vh; */
+}
+
+.letter {
+  font-size: 36px;
+  transition: font 0.3s ease, transform 0.3s ease;
+  margin: 10px;
+  cursor: pointer;
+  color: fuchsia
+}
+
+.letter:hover {
+  font-family: 'Добавьте шрифт ARIAL', sans-serif; 
+  transform: scale(1.5); 
+}
+
+.logo {
+  color: #3366cc; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Шрифт текста */
+  background-image: url('logo-background.jpg'); /* Фоновое изображение */
+  background-size: cover;
+  padding: 20px;
+  border: 2px solid #3366cc; /* Обводка текста */
+  border-radius: 10px; /* Закругленные углы */
+  box-shadow: 0 0 10px rgba(51, 102, 204, 0.5); /* Тень */
+}
+
+/* Сделайте текст по центру в классе logo
+Задайте размер шрифта 3em в классе logo */
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+
+#next {
+  font-family: Arial;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: calc(var(--index) * .7);
+  letter-spacing: -.02vw;
+  padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+  background-color: transparent;
+  color: yellow;
+  border-radius: 10em;
+  border: rgb(255 255 255 / .4) 3px solid;
+  outline: none;
+  cursor: pointer;
+  animation: blink 2s ease infinite;
+  text-decoration: none;
+  text-align: right;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

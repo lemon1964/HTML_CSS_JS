@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Kenia&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2aca7f7758.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="page_header">
+        <div class="page_banner">
+            <nav class="navigation">
+                <a href="#">
+                    <p class="logo_mp">MP</p>
+                </a>
+                <ul class="navigation_list">
+                    <li>
+                        <a href="#home" class="navigation_title_main">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#music" class="navigation_title_main">MUSIC</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="navigation_title_main">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#store" class="navigation_title_main">STORE</a>
+                    </li>
+                    <li>
+                        <a id="next" href="../Figma_Burger/index.html">Следующая страница</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div id="home" class="page_banner_flex">
+                <div>
+                    <h1 class="banner_page_banner">MUSIC PLAYER</h1>
+                    <p class="p_page_banner">American company formed in 2002 in Boston, Massachusetts</p>
+                </div>
+                <div class="iphone_with_cable">
+                    <img src="images\Flat iPhone 1.png" class="image_iphone">
+                    <img src="images\kabel_apple.png" class="image_cable">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="music" class="page_music">
+            <h3 class="section_names">Music</h3>
+            <div class="btn_page_music">
+                <div>
+                    <button class="btn_music" type="button">Listen now</button>
+                    <button class="btn_music" type="button">Find a song...</button>
+                </div>
+                <div>
+                    <img src="images\seyi-ariyo-6YgYRcyQK_s-unsplash-PhotoRoom 1.png" class="image_disc">
+                </div>
+            </div>
+        </div>
+        <div id="about" class="page_about">
+            <h3 class="section_names">About</h3>
+            <p class="text_about">MusicPlayer gives you instant access to millions of songs – 
+                from old favorites to the latest hits. 
+                Just hit play to stream anything you like.
+            </p>
+        </div>
+        <div id="store" class="page_store">
+            <h3 class="section_names">Store</h3>
+            <div class="content_page_store">
+                <div>
+                    <button class="btn_store btn1_store">Download<br>Windows x64</button>
+                </div>
+                <div>
+                    <button class="btn_store btn2_store">Download<br>MacOS</button>
+                </div>
+                <div class="info_store">
+                    <p class="question_info_store">Нужна предыдущая версия MPlayer?</p>
+                    <p class="info_download">Вы можете скачать одну из предыдущих версий MPlayer, которая совместима
+                        с нужной вам версией операционной системы и определёнными устройствами.
+                        <br>
+                        <a href="#home" class="choose_version">Выберите предыдущую версию MPlayer</a>
+                    </p>
+                </div>
+                <!--MACBOOK START-->
+                <div class="macbook">
+                    <div class="monitor">
+                        <div class="black_contur_display">
+                            <div class="display_mac">
+                                <div class="section_one_display">
+                                    <p class="title_section_one">Music Player</p>
+                                </div>
+                                <div class="section_two_display">
+                                    <div class="search">
+                                        <form action="" method="get"><input type="text" id="search" name="search"
+                                                placeholder="Поиск...">
+                                        </form>
+                                    </div>
+                                    <div class="nav_player">
+                                        <button type="button" class="form_btn btn_for_you">Для вас</button>
+                                        <button type="button" class="form_btn btn_songs">Песни</button>
+                                        <button type="button" class="form_btn btn_artists">Артисты</button>
+                                        <button type="button" class="form_btn btn_albums">Альбомы</button>
+                                        <button type="button" class="form_btn btn_player_store">Store</button>
+                                    </div>
+                                </div>
+                                <div class="section_three_display">
+                                    <img src="images\macbook\Ellipse 9.png" class="ellipse_macbook">
+                                    <p class="play_song"><b>Your Music</b>&emsp;&ensp;&mdash;&ensp;Artist</p>
+                                    <div class="stroke_slider_one">
+                                        <input type="range" min="0" max="100" value="42" class="range_one"
+                                            oninput="rangeOne()">
+                                    </div>
+                                </div>
+                                <div class="section_four_display">
+                                    <div>
+                                        <button class="btn_fourth_section btn_top10">Топ 10</button>
+                                        <button class="btn_fourth_section btn_find">Найти</button>
+                                    </div>
+                                    <div class="songs_to_choose">
+                                        <figure>
+                                            <img src="images\macbook\song1.png" alt="song1">
+                                            <figcaption>
+                                                <p class="group_name">СБПЧ</p>
+                                                <p class="song_name">Здесь и навсегда</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song2.png" alt="song2">
+                                            <figcaption>
+                                                <p class="group_name">Sufjan Stevens</p>
+                                                <p class="song_name">Carrie & Lowell</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song3.png" alt="song3">
+                                            <figcaption>
+                                                <p class="group_name">Hudson Mohawke</p>
+                                                <p class="song_name">Lantern</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song4.png" alt="song4">
+                                            <figcaption>
+                                                <p class="group_name">Pinkshinyultrablast</p>
+                                                <p class="song_name">Everything Else Matters</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song5.png" alt="song5">
+                                            <figcaption>
+                                                <p class="group_name">Floating Points</p>
+                                                <p class="song_name">Elaenia</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song6.png" alt="song6">
+                                            <figcaption>
+                                                <p class="group_name">Shamir</p>
+                                                <p class="song_name">Ratchet</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song7.png" alt="song7">
+                                            <figcaption>
+                                                <p class="group_name">Grimes</p>
+                                                <p class="song_name">Art Angels</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song8.png" alt="song8">
+                                            <figcaption>
+                                                <p class="group_name">Tame Impala</p>
+                                                <p class="song_name">Currents</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song9.png" alt="song9">
+                                            <figcaption>
+                                                <p class="group_name">Jamie xx</p>
+                                                <p class="song_name">In Colour</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="images\macbook\song10.png" alt="song10">
+                                            <figcaption>
+                                                <p class="group_name">Kendrick Lamar</p>
+                                                <p class="song_name">To Pimp A Butterfly</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>  
+                                </div>
+                                <div class="section_five_display">
+                                    <div class="settings_player">
+                                        <a href=""><img class="img_settings" src="images\macbook\Menu.png"
+                                                alt="menu"></a>
+                                        <a href=""><img class="img_settings" src="images\macbook\Internet Antenna.png"
+                                                alt="antenna"></a>
+                                        <a href=""><img class="img_settings" src="images\macbook\Adjust.png"
+                                                alt="adjust"></a>
+                                    </div>
+                                    <div class="btn_player">
+                                        <button class="btn_rewind btn_backward">
+                                            <i class="fa-solid fa-backward"></i></button>
+                                        <button class="btn_rewind btn_pause">
+                                            <i class="fa-solid fa-pause"></i></button>
+                                        <button class="btn_rewind btn_forward">
+                                            <i class="fa-solid fa-forward"></i></button>
+                                    </div class="slider_player">
+                                    <div class="stroke_slider2">
+                                        <input type="range" min="0" max="100" value="80" class="range_two"
+                                            oninput="rangeTwo()">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="title_macbook">Macbook Pro</p>
+                    </div>
+                    <div class="keybord">
+                        <div class="top_bottom">
+                            <div class="inner_bottom">
+                            </div>
+                        </div>
+                        <div class="low_bottom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MACBOOK END-->
+        </div>
+    </main>
+    <footer>
+        <div class="page_footer">
+            <ul class="blocks_footer">
+                <li class="title_block_footer">MPlayer Store
+                    <ul>
+                        <li><a class="link_footer" href="#">Варианты оплаты</a></li>
+                        <li><a class="link_footer" href="#">Состояние заказа</a></li>
+                        <li><a class="link_footer" href="#">Помощь при покупке</a></li>
+                    </ul>
+                </li>
+                <li class="title_block_footer">Ценности MPlayer
+                    <ul>
+                        <li><a class="link_footer" href="#">Универсальный доступ</a></li>
+                        <li><a class="link_footer" href="#">Окружающая среда</a></li>
+                        <li><a class="link_footer" href="#">Конфиденциальность</a></li>
+                    </ul>
+                </li>
+                <li class="title_block_footer">Учётная запись
+                    <ul>
+                        <li><a class="link_footer" href="#">Управление вашим MPlayer ID</a></li>
+                        <li><a class="link_footer" href="#">Учётная запись MPlayer Store</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 class="banner_footer">MUSIC PLAYER</h3>
+            <ul class="footer_text">
+                <li class="link_footer">© MPlayer Inc., 2022 г. Все права защищены.</li>
+                <li><a class="link_footer" href="#">Условия использования</a></li>
+                <li><a class="link_footer" href="#">Продажа и возврат</a></li>
+                <li><a class="link_footer" href="#">Юридическая информация</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
