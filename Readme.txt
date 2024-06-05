@@ -21,9 +21,9 @@ https://stepik.org/course/2223/syllabus
 cd /Users/lemon/Desktop/Курсы/HTML_CSS_JS/HTML_CSS_JS_GITHAB
 git init .
 git add .
-git commit -m 'commit 14.06'
+git commit -m 'commit 14.06_2'
 Гитхаб
-Создаем приватный репозиторий HTML_CSS_JS
+Создаем репозиторий HTML_CSS_JS
 git remote add origin git@github.com:lemon1964/HTML_CSS_JS.git
 git branch -M main
 git push -u origin main
