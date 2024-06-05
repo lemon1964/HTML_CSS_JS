@@ -17,11 +17,14 @@ https://stepik.org/course/2223/syllabus
 В этом проекте никак не задействован.
 Курс знакомит с телом JS как любого ЯП - типы данных, функции, ООП, регулярки, синтаксис.
 
+Для запуска проекта открыть в браузере файл main.html 
+и просто походить по мигающим ссылкам "Следующая страница"
+
 =======================
 cd /Users/lemon/Desktop/Курсы/HTML_CSS_JS/HTML_CSS_JS_GITHAB
 git init .
 git add .
-git commit -m 'commit 14.06_2'
+git commit -m 'commit 14.06_3'
 Гитхаб
 Создаем репозиторий HTML_CSS_JS
 git remote add origin git@github.com:lemon1964/HTML_CSS_JS.git
